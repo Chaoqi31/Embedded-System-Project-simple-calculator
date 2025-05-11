@@ -13,7 +13,6 @@ void PLL_Init(void) {
     SYSCTL_RCC2_R &= ~0x00000800; 
 }
 
-// Initialize SysTick timer
 void SysTick_Init(void) {
     NVIC_ST_CTRL_R = 0;              
     NVIC_ST_RELOAD_R = 0x00FFFFFF;    
