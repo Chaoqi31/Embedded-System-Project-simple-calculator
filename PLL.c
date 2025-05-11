@@ -1,7 +1,6 @@
 #include "PLL.h"
 #include "tm4c123gh6pm.h"
 
-// Initialize system clock to 80 MHz
 void PLL_Init(void) {
     SYSCTL_RCC2_R |= 0x80000000;  
     SYSCTL_RCC2_R |= 0x00000800;  
