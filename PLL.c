@@ -20,7 +20,6 @@ void SysTick_Init(void) {
     NVIC_ST_CTRL_R = 0x05;           
 }
 
-// Millisecond delay
 void Delay_ms(int ms) {
     for (int i = 0; i < ms; i++) {
         NVIC_ST_RELOAD_R = 80000 - 1; 
